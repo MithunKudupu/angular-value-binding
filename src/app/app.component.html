@@ -1,3 +1,5 @@
 <h2>This is value binding: {{ title }}</h2>
 <hr />
 <input type="text" value="{{ title }}" />
+<hr />
+<h2>Custom pipe applied: {{ title | customPipe: 'p1, p2, p3' }}</h2>
