@@ -1,3 +1,21 @@
 <h2>This is value binding: {{ title }}</h2>
 <hr />
 <input type="text" value="{{ title }}" />
+<hr />
+<h2>Learning Built-in Pipes</h2>
+<h3>Uppercase: {{ title | uppercase }}</h3>
+<br />
+<h3>lowercase: {{ title | lowercase }}</h3>
+<br />
+<h3>Titlecase: {{ title | titlecase }}</h3>
+<hr />
+<h3>Currency (INR): {{ amount | currency: 'INR' }}</h3>
+<br />
+<h3>Percent: {{ rate | percent }}</h3>
+<br />
+<h3>Number (2.4 >> NN.DDDD): {{ pi | number: '2.4' }}</h3>
+<br />
+<h3>
+  Json (for objects):
+  <pre>{{ car | json }}</pre>
+</h3>
